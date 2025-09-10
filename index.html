@@ -14,7 +14,7 @@
     <nav class="navbar navbar-expand-lg py-3">
     <div class="container">
         <a class="navbar-brand" href="#">
-            <img src="images/logo2.png" alt="Logo" class="navbar-logo">
+            <img src="images/logo.png" alt="Logo" class="navbar-logo">
         </a>
         <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -25,33 +25,31 @@
                 <a class="nav-link text-light active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-light" href="#">About</a>
+                <a class="nav-link text-light" href="#about">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-light" href="#">Portfolio</a>
+                <a class="nav-link text-light" href="#services">Services</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-light" href="#">Work</a>
+                <a class="nav-link text-light" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-light" href="#">Blog</a>
+                <a class="nav-link text-light" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-light" href="#">Contact</a>
+                <a class="nav-link text-light" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="#contact">Contact</a>
             </li>
         </ul>
-            <a class="btn mybtn rounded-0 text-uppercase bg-green" href="#" role="button">Let's Talk</a>
+            <a class="btn mybtn rounded-0 text-uppercase bg-green" href="#contact" role="button">Let's Talk</a>
         </div>
     </div>
     </nav>
 
-
-
-
-
-
-
     <!-- All Sections Start Here -->
+    <!-- Home Page Section -->
     <main>
         <section class="hero-section d-flex align-items-center">
             <div class="container">
@@ -63,7 +61,7 @@
                             Hi, I am Raviraj Kadam, a passionate Fullstack Developer based in the Pune.
                             Welcome to my portfolio.
                         </p>
-                            <a class="btn mybtn rounded-0 text-uppercase bg-green" href="#" role="button">View Portfolio</a>
+                            <a class="btn mybtn rounded-0 text-uppercase bg-green" href="/Raviraj_Resume.pdf" role="button" download="true">View My Resume</a>
                     </div>
                     <div class="col-lg-6">
                         <div class="image-container mx-auto">
@@ -74,12 +72,13 @@
             </div>
         </section>
 
-        <section class="section-container">
+        <!-- About Page Section -->
+        <section class="section-container" id="about">
             <div class="container">
                 <div class="row align-items-center gap-5 gap-lg-0">
                     <div class="col-lg-6 order-last order-lg-first">
                         <div class="about-me glow">
-                            <img src="images/about me2.png" alt="About Me">
+                            <img src="images/about me.png" alt="About Me">
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -95,7 +94,7 @@
                         <p class="txt-gray para">
                             Do you have fancy saying hi to me or you want to get started with your project and you 
                             need my help? feel free to contact me.
-                            <a href="#" class="txt-green">www.ravirajskadam2004@gmail.com</a>
+                            <a href="#" class="txt-green">ravirajskadam2004@gmail.com</a>
                         </p>
                             <a class="btn mybtn rounded-0 text-uppercase bg-green" href="#" role="button">Hire me</a>
                     </div>
@@ -103,9 +102,8 @@
             </div>
         </section>
 
-
-
-        <section class="section-container">
+        <!-- Servies Page Section -->
+        <section class="section-container" id="services">
             <div class="container text-center">
                 <span class="text-white text-uppercase main-txt">What i will do for you</span>
                 <h2 class="txt-green fw-semibold">Services</h2>
@@ -168,8 +166,269 @@
             </div>
         </section>
 
+        <!-- Recent projects section -->
+        <section id="projects">
+            <div class="section-container">
+                <div class="container text-center">
+                    <span class="text-white text-uppercase main-txt">some of my recent works</span>
+                    <h2 class="txt-green fw-semibold">Projects</h2>
+                    <div class="row justify-content-center mt-5 gap-4">
+                        <div class="col-lg-6 my-card glow">
+                            <div class="card bg-dark-blue">
+                                <img src="images/projects/Wanderlust.png" class="card-img-top" alt="Wanderlust">
+                                <div class="card-body">
+                                    <h5 class="card-title text-white">Wanderlust</h5>
+                                    <p class="card-text txt-gray">A MERN stack Airbnb clone for booking and listing rental properties with authentication, search, and reviews.</p>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="col-lg-6 my-card glow">
+                            <div class="card bg-dark-blue">
+                                <img src="images/projects/Doctor_Appointment.png" class="card-img-top" alt="Prescripto">
+                                <div class="card-body">
+                                    <h5 class="card-title text-white">Prescripto</h5>
+                                    <p class="card-text txt-gray">A fullstack web app for scheduling doctor appointments with user login, booking system, and admin management.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 my-card glow">
+                            <div class="card bg-dark-blue">
+                                <img src="images/projects/Spotify_Clone.png" class="card-img-top" alt="Spotify_Clone">
+                                <div class="card-body">
+                                    <h5 class="card-title text-white">Spotify Clone</h5>
+                                    <p class="card-text txt-gray">A basic frontend clone of Spotify with playlists, music player UI, and responsive design.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+         <section id="skills">
+            <div class="section-container">
+                <div class="container text-center">
+                    <span class="text-white text-uppercase main-txt">My Latest Skills</span>
+                    <h2 class="txt-green fw-semibold">Skills</h2>   
+                </div>
+                <div>
+                    <div class="container my-5">
+                    <div class="row row-cols-2 row-cols-md-6 g-4 text-center">
+                        <div class="col">
+                        <div class="card h-100 border-0">
+                            <img src="images/skills/html5-original.svg" class="card-img-top skill-img p-3" alt="HTML">
+                        </div>
+                        </div>
+
+                        <div class="col">
+                        <div class="card h-100 border-0">
+                            <img src="images/skills/css3-original.svg" class="card-img-top skill-img p-3" alt="CSS">
+                        </div>
+                        </div>
+
+                        <div class="col">
+                        <div class="card h-100 border-0">
+                            <img src="images/skills/javascript-original.svg" class="card-img-top skill-img p-3" alt="JavaScript">
+                        </div>
+                        </div>
+
+                        <div class="col">
+                        <div class="card h-100 border-0">
+                            <img src="images/skills/react-original.svg" class="card-img-top skill-img p-3" alt="React">
+                        </div>
+                        </div>
+
+                        <div class="col">
+                        <div class="card h-100 border-0">
+                            <img src="images/skills/nodejs-original-wordmark.svg" class="card-img-top skill-img p-3" alt="Node.js">
+                        </div>
+                        </div>
+
+                        <div class="col">
+                        <div class="card h-100 border-0">
+                            <img src="images/skills/mongodb-original.svg" class="card-img-top skill-img p-3" alt="MongoDB">
+                        </div>
+                        </div>
+
+                        <div class="col">
+                        <div class="card h-100 border-0">
+                            <img src="images/skills/express-original.svg" class="card-img-top skill-img p-3" alt="Express.js">
+                        </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 border-0">
+                            <img src="images/skills/bootstrap-original.svg" class="card-img-top skill-img p-3" alt="Bootstrap">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 border-0">
+                                <img src="images/skills/sqldatabase-original.svg" class="card-img-top skill-img p-3" alt="SQL">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 border-0">
+                                <img src="images/skills/mysql-original.svg" class="card-img-top skill-img p-3" alt="MySQL">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 border-0">
+                                <img src="images/skills/java-original.svg" class="card-img-top skill-img p-3" alt="Core Java">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 border-0">
+                                <img src="images/skills/python-original.svg" class="card-img-top skill-img p-3" alt="Python">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 border-0">
+                                <img src="images/skills/cplusplus-original.svg" class="card-img-top skill-img p-3" alt="C++">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 border-0">
+                                <img src="images/skills/tailwindcss-original.svg" class="card-img-top skill-img p-3" alt="Tailwindcss">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 border-0">
+                                <img src="images/skills/git-original.svg" class="card-img-top skill-img p-3" alt="Git">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 border-0">
+                                <img src="images/skills/github-original.svg" class="card-img-top skill-img p-3" alt="GitHub">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 border-0">
+                                <img src="images/skills/vscode-original.svg" class="card-img-top skill-img p-3" alt="VS Code">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 border-0">
+                                <img src="images/skills/npm-original.svg" class="card-img-top skill-img p-3" alt="npm">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blogs Section -->
+        <section id="blog">
+            <div class="section-container">
+                <div class="container text-center">
+                    <span class="text-white text-uppercase main-txt">LATEST BLOGS</span>
+                    <h2 class="txt-green fw-semibold">BLOG</h2>
+                    <div class="row justify-content-center mt-5 gap-4">
+                        <div class="col-lg-4 blog-card glow">
+                            <div class="card bg-dark-blue px-3 pb-3">
+                                <img src="images/blogs/blog 1.jpg" class="card-img-top" alt="Wanderlust">
+                                <div class="card-body">
+                                    <h5 class="card-title text-white">Programming Perspectives</h5>
+                                    <p class="card-text txt-gray">Programming Perspectives provides expert tutorials and insights to elevate coding skills and keep up with tech trends.</p>
+                                    <a class="btn mybtn rounded-0 text-uppercase bg-green" href="#" role="button">View Blog</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 blog-card glow">
+                            <div class="card bg-dark-blue px-3 pb-3">
+                                <img src="images/blogs/blog 2.jpg" class="card-img-top" alt="Prescripto">
+                                <div class="card-body">
+                                    <h5 class="card-title text-white">Web Development & AI</h5>
+                                    <p class="card-text txt-gray">Web Development & AI explores trends, tutorials, and innovations in web tech and artificial intelligence for developers.</p>
+                                    <a class="btn mybtn rounded-0 text-uppercase bg-green" href="#" role="button">View Blog</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 blog-card glow">
+                            <div class="card bg-dark-blue px-3 pb-3">
+                                <img src="images/blogs/blog 3.jpg" class="card-img-top" alt="Spotify_Clone">
+                                <div class="card-body">
+                                    <h5 class="card-title text-white">Design Patterns & Principles</h5>
+                                    <p class="card-text txt-gray">Explores essential design patterns and principles to enhance code quality, maintainability, and scalability effectively.</p>
+                                    <a class="btn mybtn rounded-0 text-uppercase bg-green" href="#" role="button">View Blog</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Page Section -->
+        <section id="contact">
+            <div class="section-container">
+                <div class="container text-center">
+                    <span class="text-white text-uppercase main-txt">get in touch</span>
+                    <h2 class="txt-green fw-semibold">Contact</h2>
+
+                    <form class="bg-green mx-auto px-4 py-5 mt-5">
+                        <div class="mb-4">
+                            <input type="email" class="form-control py-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Name">
+                        </div>
+                        <div class="mb-4">
+                            <input type="password" class="form-control py-2" id="exampleInputPassword1" placeholder="Your Email">
+                        </div>
+                        <div class="mb-4">
+                            <input type="text" class="form-control py-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Subject">
+                        </div>
+                        <div class="mb-4">
+                            <textarea class="form-control" placeholder="Your Message" id="floatingTextarea"></textarea>
+                        </div>
+                        <button type="submit" class="btn mybtn text-white rounded-0 text-uppercase bg-black">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <!-- Footer Starts Here -->
+    <footer class="my-3">
+        <div class="container">
+            <div class="line">
+                <div class="row gap-4 gap-lg-0">
+                    <div class="col-lg-6 mt-3 d-flex justify-content-sm-start justify-content-center">
+                        <a href="">
+                            <i class="fa-brands fa-linkedin txt-green fs-5"></i>
+                        </a>
+                        <a href="" class="ms-3">
+                            <i class="fa-brands fa-twitter txt-green fs-5"></i>
+                        </a>
+                        <a href="" class="ms-3">
+                            <i class="fa-brands fa-facebook-f txt-green fs-5"></i>
+                        </a>
+                        <a href="" class="ms-3">
+                            <i class="fa-brands fa-instagram txt-green fs-5"></i>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 mt-3">
+                        <p class="txt-gray text-lg-end text-center">
+                            Copyright &copy; 2025-All rights are reserved by Raviraj
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
