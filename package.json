@@ -1,4 +1,7 @@
 {
+  "engines": {
+    "node": "v22.17.0"
+  },
   "name": "portfolio-website",
   "version": "1.0.0",
   "description": "",
