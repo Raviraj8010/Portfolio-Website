@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: portfolio-website
+    env: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "node server.js"
+    autoDeploy: true
+    branch: main
