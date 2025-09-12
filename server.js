@@ -2,12 +2,12 @@ const express = require("express");
 const mongoose = require("mongoose");
 const nodemailer = require("nodemailer");
 const path = require("path");
-require("dotenv").config(); // Load environment variables
+require("dotenv").config();
 
 const app = express();
 app.use(express.json());
 
-// Serve static frontend files
+// ✅ Serve static frontend files
 app.use(express.static(path.join(__dirname, "public")));
 
 // ✅ MongoDB Atlas connection
@@ -29,7 +29,7 @@ mongoose
     process.exit(1); // Stop app if DB fails
   });
 
-// Schema
+// ✅ Schema
 const contactSchema = new mongoose.Schema({
   name: String,
   email: String,
@@ -78,11 +78,10 @@ app.post("/contact", async (req, res) => {
   }
 });
 
-// ✅ Fallback for SPA (React-style routing or index.html reloads)
-app.get("*", (req, res) => {
+app.use((req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
-// Start Server
+// ✅ Start Server
 const PORT = process.env.PORT || 10000; // Render requires dynamic port
 app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
